@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    app:cardCornerRadius="12dp"
+    android:layout_margin="18dp"
+    android:elevation="90dp">
+
+    <LinearLayout
+        android:id="@+id/provideracceptedview"
+        android:layout_width="match_parent"
+        android:layout_height="440dp"
+        android:background="@drawable/cornerradius"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/post_image"
+            android:layout_width="match_parent"
+            android:layout_height="131dp" />
+
+        <TextView
+            android:id="@+id/itemname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Food Name"
+            android:textColor="#1A0A0A"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/clientname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ClientName"
+            android:textColor="#1A0A0A"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/clientquantity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Quantity"
+            android:textColor="#1A0A0A"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/clientmobile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="MobileNo"
+            android:textColor="#1A0A0A"
+            android:textSize="15dp" />
+
+        <Button
+            android:id="@+id/completedbutton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="PREPARATION COMPLETED" />
+
+        <Button
+            android:id="@+id/fifteenminleftbutton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="15 MINUTES LEFT" />
+        <Button
+            android:id="@+id/chatoption"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Quieries/Chat box" />
+
+        <Button
+            android:id="@+id/deliveredbutton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="DELIVERED ORDER"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

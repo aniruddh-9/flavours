@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="18dp"
+    android:elevation="160dp"
+    android:orientation="vertical"
+    app:cardCornerRadius="20dp">
+
+
+    <LinearLayout
+        android:id="@+id/todayitemscard"
+        android:layout_width="match_parent"
+        android:layout_height="325dp"
+        android:background="@drawable/cornerradius"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/post_image"
+            android:layout_width="match_parent"
+            android:layout_height="200dp" />
+
+        <TextView
+            android:id="@+id/itemname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Food Name"
+            android:textColor="#1A0A0A"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/itemprice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cost"
+            android:textColor="#1A0A0A"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/itemdescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="description"
+            android:textColor="#1A0A0A"
+            android:textSize="15dp" />
+
+        <Button
+            android:id="@+id/removeimage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Remove Item"
+            android:textColor="#FFFFFF"
+            android:textSize="15dp" />
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

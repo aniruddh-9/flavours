@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="530dp"
+    android:background="@drawable/bgapps"
+    tools:context=".foodclientacceptedholder">
+
+    <LinearLayout
+        android:id="@+id/clientacceptedview"
+        android:layout_width="0dp"
+        android:layout_height="520dp"
+        android:background="@drawable/cornerradius"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/post_image"
+            android:layout_width="match_parent"
+            android:layout_height="200dp" />
+
+        <TextView
+            android:id="@+id/itemname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Food Name"
+            android:textColor="#1A0A0A"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/clientname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ClientName"
+            android:textColor="#1A0A0A"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/clientquantity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Quantity"
+            android:textColor="#1A0A0A"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/clientmobile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="MobileNo"
+            android:textColor="#1A0A0A"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/statusreport"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Status"
+            android:textColor="#1A0A0A"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/remainingtime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Time Left"
+            android:textColor="#1A0A0A"
+            android:textSize="15dp" />
+
+        <Button
+            android:id="@+id/livetrackingbutton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TRACK THE PROVIDERS ADDRESS" />
+
+        <Button
+            android:id="@+id/chatbutton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="POST ANY REQUIREMENTS/CHAT" />
+
+        <Button
+            android:id="@+id/ratingbutton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="RATING AND REVIEW" />
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".afterLogin">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/bgapps"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/foodLinear"
+            android:layout_width="match_parent"
+            android:layout_height="277dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageView24"
+                android:layout_width="209dp"
+                android:layout_height="189dp"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/food" />
+
+            <Button
+                android:id="@+id/foodButton"
+                android:layout_width="116dp"
+                android:layout_height="191dp"
+                android:layout_weight="1"
+                android:onClick="foodSearch"
+                android:text="FOOD" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/eventLinear"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/foodprovider"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="FoodProvider" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/roomLinear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

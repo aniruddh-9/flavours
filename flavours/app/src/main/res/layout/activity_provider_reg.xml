@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgapps"
+    android:visibility="visible"
+    tools:context=".provider_reg">
+
+    <ProgressBar
+        android:id="@+id/loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="69dp"
+        android:layout_marginRight="69dp"
+        android:layout_marginBottom="64dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/providernumber"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.3" />
+
+    <EditText
+        android:id="@+id/addressinput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="enter your address"
+        android:inputType="textPostalAddress"
+        app:layout_constraintStart_toStartOf="@+id/nameprovider"
+        app:layout_constraintTop_toBottomOf="@+id/nameprovider" />
+
+    <EditText
+        android:id="@+id/providernumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="enter your phone number"
+        android:inputType="number"
+        android:textColor="@android:color/background_dark"
+        app:layout_constraintStart_toStartOf="@+id/addressinput"
+        app:layout_constraintTop_toBottomOf="@+id/addressinput" />
+
+    <EditText
+        android:id="@+id/safetynumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="enter food safety number"
+        android:inputType="textPersonName"
+        android:textColor="@android:color/background_dark"
+        android:textColorHighlight="@color/colorPrimary"
+        android:textColorHint="@color/colorPrimary"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="@+id/providernumber"
+        app:layout_constraintTop_toBottomOf="@+id/providernumber" />
+
+    <EditText
+        android:id="@+id/nameprovider"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="13dp"
+        android:ems="10"
+        android:hint="enter a display name"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/cookname"
+        app:layout_constraintTop_toBottomOf="@+id/cookname" />
+
+    <EditText
+        android:id="@+id/cookname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="96dp"
+        android:layout_marginLeft="96dp"
+        android:layout_marginTop="34dp"
+        android:layout_marginBottom="269dp"
+        android:ems="10"
+        android:hint="enter your name"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/fetch_location"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/fetch_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="100dp"
+        android:text="Set Location"
+        app:layout_constraintBottom_toTopOf="@+id/submitdata"
+        app:layout_constraintStart_toStartOf="@+id/safetynumber"
+        app:layout_constraintTop_toBottomOf="@+id/cookname" />
+
+    <Button
+        android:id="@+id/submitdata"
+        android:layout_width="134dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="228dp"
+        android:text="Submit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fetch_location" />
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:ems="10"
+        android:hint="enter username"
+        android:inputType="textPersonName"
+        android:textColor="@android:color/background_dark"
+        android:textColorHint="@color/colorPrimary"
+        app:layout_constraintStart_toStartOf="@+id/fetch_location"
+        app:layout_constraintTop_toBottomOf="@+id/fetch_location" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

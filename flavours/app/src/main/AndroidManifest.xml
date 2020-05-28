@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.flavours">
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.NoActionBar">
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+        <activity
+            android:name=".TrackActivity"
+            android:label="@string/title_activity_track"></activity>
+        <activity android:name=".ratingactivity" />
+        <activity android:name=".MessageActivity" />
+        <activity android:name=".refund" />
+        <activity android:name=".paymentactivity" />
+        <activity android:name=".foodclientacceptedholder" />
+        <activity android:name=".provideracceptedholder" />
+        <activity android:name=".providerordersholder" />
+        <activity android:name=".orderfoodclient" />
+        <activity android:name=".providertodayitems" />
+        <activity android:name=".providerhistory" />
+        <activity android:name=".providerorders" />
+        <activity android:name=".providerafterlogin" /> <!-- <activity android:name=".afterproviderlogin" /> -->
+        <activity
+            android:name=".providerpage"
+            android:parentActivityName=".afterLogin" />
+        <activity android:name=".trial" />
+        <activity
+            android:name=".provider_reg"
+            android:parentActivityName=".providerpage" />
+        <activity android:name=".notifications" />
+        <activity android:name=".food_profile" />
+        <activity
+            android:name=".foodsearch"
+            android:parentActivityName=".afterLogin" />
+        <activity android:name=".foodSearch" />
+        <activity android:name=".afterLogin" />
+        <activity android:name=".verifyPhoneLogin" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service android:name=".Notifications.MyFirebaseMessagingService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+
+        <service android:name=".Notifications.MyFirebaseInstanceIDService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+            </intent-filter>
+        </service>
+
+        <!--
+         Set custom default icon. This is used when no icon is set for incoming notification messages.
+             See README(https://goo.gl/l4GJaQ) for more.
+        -->
+        <meta-data android:name="com.google.firebase.messaging.default_notification_icon" android:resource="@drawable/ic_launcher_background"/>
+        <!--
+         Set color used with incoming notification messages. This is used when no color is set for the incoming
+                     notification message. See README(https://goo.gl/6BKBk7) for more.
+        -->
+        <meta-data android:name="com.google.firebase.messaging.default_notification_color" android:resource="@color/colorAccent"/>
+
+
+
+
+    </application>
+
+</manifest>
