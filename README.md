@@ -1,4 +1,10 @@
-The main motive of the application is to provide tourists, bachelors, etc. a taste of local cuisines. The application facilitates direct communication between the client and the provider elimintating the usual middleman. 
+# flavOURS
+
+An android application for home-food ordering. The main motive of the application is to provide tourists, bachelors, etc. a taste of local cuisines. The application facilitates direct communication between the client and the provider elimintating the usual middleman. 
+
+## Download
+
+* [flavours_v1.0](https://drive.google.com/open?id=1aBkkqhsYQjZrmvbECE0g8j5HJ8evyJEP)
 
 ## Getting Started
 
@@ -21,18 +27,18 @@ What things you need to install the software and how to install them
 3. Add the necessary APIs (i.e. [Google-Maps-API](https://console.cloud.google.com/google/maps-apis/overview),[FCM Server key](https://firebase.google.com/)
 4. Build and run
 
-End with an example of getting some data out of the system or using it for a little demo
 
 
-## Additional Dependecies used
+## Additional Dependencies used
 
-* [Retrofit](https://square.github.io/retrofit/) - To send JSON object to FCM for notification
+* [Retrofit](https://square.github.io/retrofit/) - To send JSON object to FCM for notifications.
 
 
 ## Contributors
 
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
+* [JVK Karthik](https://github.com/KARTHIKJVK)
+* [Poreddy Premchandar Reddy]
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+This project is licensed under the MIT License - see the [LICENSE.md](https://github.com/aniruddh-9/flavours/blob/master/LICENSE) file for details
