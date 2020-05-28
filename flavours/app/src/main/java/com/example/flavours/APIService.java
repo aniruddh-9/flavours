@@ -13,7 +13,7 @@ public interface APIService {
     @Headers(
             {
                     "Content-Type:application/json",
-                    "Authorization:key=AAAA853lFO8:APA91bHTwUiLzX4iGmKdFtl7M-oNnrm1gzE_yipNAgVAfQDcJRHllX4IbolYR07pAaTJbyE6tJjVOPF9Mrn07HvXAdVLjCzcNvelVTWREaA14wBzKzDffwwzU4OpRHd4ATMs9af9mK6i"
+                    "Authorization:key=YOUR_FCM_SERVER_KEY"
             }
     )
 
