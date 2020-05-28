@@ -9,6 +9,7 @@ An android application for home-food ordering. The main motive of the applicatio
 * Includes chat functionality for direct communication
 * Provider can set his desired window time for accepting orders
 * Notification equipped to send the status of the order,delivery,preparation and chat
+* Google Maps support to reach the provider
 * No Delivery
 
 ## Download
@@ -36,7 +37,9 @@ What things you need to install the software and how to install them
 3. Add the necessary APIs (i.e. [Google-Maps-API](https://console.cloud.google.com/google/maps-apis/overview),[FCM Server key](https://firebase.google.com/))
 4. Build and run
 
-<img src="images/startup.jpg" height=500 width=250>       <img src="images/loggedIn.jpg" height=500 width=250>       <img src="images/firstpage.jpg" height=500 width=250>
+<img src="images/startup.jpg" height=500 width=250>       <img src="images/loggedIn.jpg" height=500 width=250>       <img src="images/firstpage.jpg" height=500 width=250> 
+
+<img src="images/chat.jpg" height=500 width=250>       <img src="images/map.jpg" height=500 width=250> 
 
 ## Additional Dependencies used
 
