@@ -32,7 +32,7 @@ What things you need to install the software and how to install them
 ### Installing
 
 
-1. Add the project to firebase
+1. Add the project to your firebase account
 2. Download the ```google-services.json``` file and place it in the app-level directory of the project.
 3. Add the necessary APIs (i.e. [Google-Maps-API](https://console.cloud.google.com/google/maps-apis/overview),[FCM Server key](https://firebase.google.com/))
 4. Build and run
