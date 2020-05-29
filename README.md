@@ -14,7 +14,7 @@ An android application for home-food ordering. The main motive of the applicatio
 
 ## Download
 
-* [flavours_v1.0](https://drive.google.com/open?id=1aBkkqhsYQjZrmvbECE0g8j5HJ8evyJEP)
+* [flavours v1.0](https://github.com/aniruddh-9/flavours/releases)
 
 ## Getting Started
 
